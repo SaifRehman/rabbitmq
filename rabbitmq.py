@@ -6,7 +6,7 @@ app = Flask(__name__)
 QUEUE_NAME = 'demo_queue'
 
 # Decoded RabbitMQ AMQP URI
-RABBITMQ_URI = 'amqp://default_user_N3oVfWGiMxXhlmXUkOC:mmFJ_XiJzPGWc7OQZRKErxuZpJYygq-e@rabbitmq.svc:5672'
+RABBITMQ_URI = 'amqp://default_user_N3oVfWGiMxXhlmXUkOC:mmFJ_XiJzPGWc7OQZRKErxuZpJYygq-e@rabbitmq.rabbitmq.svc:5672'
 
 def connect_channel():
     params = pika.URLParameters(RABBITMQ_URI)
